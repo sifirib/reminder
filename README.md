@@ -1,7 +1,12 @@
 # reminder
 It is a reminder that works as a service on your os. 
 
-~For now, you must set notifications you want on a text file called 'tasks'. Example:  meeting time-13:45
+~For now, you must set notifications you want on a text file called 'tasks'. 
+
+Example:  
+
+meeting time-13:45
+
 live broadcast-22:30
 
 call my brother-17:21
