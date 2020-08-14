@@ -28,7 +28,7 @@ for task in read_file.readlines():
     tasks.append([data_task, data_date[:-1]])
     
 
-print(tasks)
+print("Tasks: \n",tasks)
 read_file.close()
 
 
@@ -48,14 +48,12 @@ while True:
         int_current_time = int(current_hour)*60 + int(current_minute)
         
         if  ((aux_time - int_current_time) < nearest_time) and (aux_time > int_current_time + 0.5):
-            print(i)
             nearest_time = aux_time- int_current_time
             k = i
             
         if (i == len(tasks) - 1):
             time_for_schedule = tasks[k][1]
             text_for_not = tasks[k][0]
-            print(text_for_not)
             break
    
     def do_notification():
@@ -74,7 +72,7 @@ while True:
         if current_time == f"{time_for_schedule}:05":
             # print("yes")
             if tasknumber == len(tasks):
-                sys.exit("All tasks were notificationed, bye for today <:")
+                sys.exit("\nAll tasks were notificationed, bye for today <:")
             break
         
         # else:
